@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/contents.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/intro.css" />
+    <link rel="stylesheet" href="styles/end.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>This Movie Made ...</h1>
+    </header>
+    <main>
+      <section class="intro-page">
+        <h2 class="welcome">Welcome</h2>
+        <p class="welcome-message">
+          In this game, you will be guessing which movie has a higher gross
+          revenue worldwide!
+        </p>
+        <button class="btnStart">Press to Play</button>
+      </section>
+      <section class="contents-page hidden">
+        <div class="movie">
+          <img
+            class="movie-image"
+            src="images/interstellar.jpg"
+            alt="interstellar"
+          />
+          <div class="buttons hidden">
+            <button class="btnHigh">More</button>
+            <button class="btnLow">Less</button>
+          </div>
+          <div class="gross-next-container">
+            <h2 class="gross-value" data-target="701729206">0</h2>
+            <button class="nextButton hidden">Next</button>
+          </div>
+        </div>
+        <div class="movie">
+          <img class="movie-image" src="images/joker.jpg" alt="joker" />
+          <div class="buttons">
+            <button class="btnHigh">More</button>
+            <button class="btnLow">Less</button>
+          </div>
+          <div class="gross-next-container hidden">
+            <h2 class="gross-value" data-target="1074445730">0</h2>
+            <button class="nextButton">Next</button>
+          </div>
+        </div>
+        <div class="circle hidden">
+          <img class="check" src="images/checkMark.png" />
+        </div>
+
+        <div class="cross hidden">
+          <img class="crossMark" src="images/crossmark.png" />
+        </div>
+      </section>
+      <section class="end-page hidden">
+        <h2 class="over">Game Over</h2>
+        <p class="score-display">Your score: 0</p>
+        <button class="btnAgain">Play Again</button>
+      </section>
+    </main>
+    <footer class="score-footer hidden">
+      <p class="scoreTracker">Score: 0</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
